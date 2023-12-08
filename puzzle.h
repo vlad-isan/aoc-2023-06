@@ -7,11 +7,22 @@
 
 #include <algorithm>
 #include <cctype>
+#include "fmt/core.h"
 #include <fstream>
 #include <iostream>
+#include <sstream>
 #include <ranges>
 #include <string>
-#include "fmt/core.h"
+#include <vector>
+
+constexpr uint64_t ACCELERATION = 1;
+
+struct Race {
+    double time;
+    double distance;
+
+    uint64_t get_ways_to_win() const;
+};
 
 int puzzle_sample_1(const std::string &base_file_path);
 

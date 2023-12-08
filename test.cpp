@@ -19,20 +19,20 @@ std::string get_base_file_path() {
 
 TEST(AOC, PUZZLE_SAMPLE_1) {
     fmt::println("{}", base_file_path);
-    EXPECT_EQ(puzzle_sample_1(get_base_file_path()), 0);
+    EXPECT_EQ(puzzle_sample_1(get_base_file_path()), 288);
 }
 
 TEST(AOC, PUZZLE_SAMPLE_2) {
     fmt::println("{}", base_file_path);
-    EXPECT_EQ(puzzle_sample_2(get_base_file_path()), 0);
+    EXPECT_EQ(puzzle_sample_2(get_base_file_path()), 71503);
 }
 
 TEST(AOC, PUZZLE_1) {
     fmt::println("{}", base_file_path);
-    EXPECT_EQ(puzzle_1(get_base_file_path()), 0);
+    EXPECT_EQ(puzzle_1(get_base_file_path()), 140220);
 }
 
 TEST(AOC, PUZZLE_2) {
-    EXPECT_EQ(puzzle_2(get_base_file_path()), 0);
+    EXPECT_EQ(puzzle_2(get_base_file_path()), 39570185);
 }
 
